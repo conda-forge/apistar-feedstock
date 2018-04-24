@@ -13,17 +13,17 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<35]
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
   run:
     - aiofiles
     - jinja2
-    - python
+    - python >=3.5
     - requests
     - werkzeug
     - whitenoise
