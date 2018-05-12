@@ -1,6 +1,6 @@
 {% set name = "apistar" %}
-{% set version = "0.5.10" %}
-{% set sha256 = "4d7efd375dab42f9fd5d2d44cba92addbdfac78c05c7aa7beb2e3ca153416db4" %}
+{% set version = "0.5.15" %}
+{% set sha256 = "1333463a76868c3737d0e3aa60f07e246e6f281783e8cddad9265b1407ed66ac" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
