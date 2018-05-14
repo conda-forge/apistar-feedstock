@@ -22,8 +22,10 @@ requirements:
     - pip
   run:
     - aiofiles
+    - click
     - jinja2
     - python >=3.5
+    - pyyaml
     - requests
     - werkzeug
     - whitenoise
