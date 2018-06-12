@@ -1,6 +1,6 @@
 {% set name = "apistar" %}
-{% set version = "0.5.29" %}
-{% set sha256 = "e4bc851cbc32b17672767d1223c26e205f9c9bac63aadf2216a905863c456daf" %}
+{% set version = "0.5.30" %}
+{% set sha256 = "754858d613e7b386de7a7d33d81c95b61fb89748f3161fe4a71dabe3a320ecab" %}
 
 
 package:
