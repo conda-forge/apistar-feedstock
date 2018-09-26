@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A smart Web API framework, designed for Python 3
+Summary: API documentation, validation, mocking, and clients.
 
 
 

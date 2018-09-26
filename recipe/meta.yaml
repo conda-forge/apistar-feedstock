@@ -1,6 +1,6 @@
 {% set name = "apistar" %}
-{% set version = "0.5.41" %}
-{% set sha256 = "774c0b4fc5926123ccdb37e889d3c652b418e49e09b4b6acbc32538889b9bdf8" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "4338b24468b49526ceac4a8f84046056081ee747f373ca8d0647bd6b2344c895" %}
 
 
 package:
@@ -19,17 +19,14 @@ build:
 
 requirements:
   build:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - aiofiles
     - click
     - jinja2
-    - python >=3.5
+    - python >=3.6
     - pyyaml
     - requests
-    - werkzeug
-    - whitenoise
 
 test:
   imports:
@@ -40,7 +37,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.md'
-  summary: 'A smart Web API framework, designed for Python 3'
+  summary: 'API documentation, validation, mocking, and clients.'
 
   doc_url: https://docs.apistar.com/
   dev_url: https://github.com/encode/apistar
