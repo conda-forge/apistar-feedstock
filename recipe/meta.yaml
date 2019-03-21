@@ -27,6 +27,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - requests
+    - typesystem >=0.2.0
 
 test:
   imports:
