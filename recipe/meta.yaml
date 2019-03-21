@@ -1,6 +1,6 @@
 {% set name = "apistar" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "4338b24468b49526ceac4a8f84046056081ee747f373ca8d0647bd6b2344c895" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "180306682fe5c3ed70fbc2f6a64c6b7791719ff60af827a912d88baced7494b9" %}
 
 
 package:
@@ -27,6 +27,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - requests
+    - typesystem >=0.2.0
 
 test:
   imports:
