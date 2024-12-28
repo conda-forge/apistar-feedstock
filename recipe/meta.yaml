@@ -9,27 +9,29 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - pip
   run:
     - click
     - jinja2
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - requests
     - typesystem >=0.2.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - apistar
 
